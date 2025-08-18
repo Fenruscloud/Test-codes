@@ -1,0 +1,44 @@
+.carousel-image {
+    /* width: 300px !important; Set the desired width */
+    height: 300px !important; /* Set the desired height */
+    object-fit: cover; /* Ensures the image is cropped equally */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the image behaves as a block element */
+}
+
+.carousel-inner {
+    position: relative; /* Ensures proper positioning of child elements */
+    /* width: 300px; Matches the image width */
+    height: 300px; /* Matches the image height */
+    margin: 0 auto; /* Centers the carousel */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.carousel-item {
+    position: relative; /* Ensures the buttons are positioned relative to this container */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3; /* Ensures the buttons are above the images */
+    position: absolute; /* Positions the buttons relative to the carousel-item */
+    top: 50%; /* Vertically centers the buttons */
+    transform: translateY(-50%); /* Adjusts for the button's height */
+    width: 40px; /* Adjusts the button width */
+    height: 40px; /* Adjusts the button height */
+    border-radius: 50%; /* Makes the buttons circular */
+    display: flex; /* Centers the icons inside the buttons */
+    align-items: center; /* Vertically centers the icons */
+    justify-content: center; /* Horizontally centers the icons */
+    background-color: black; /* Makes the buttons black */
+    color: white; /* Ensures the icons inside the buttons are visible */
+}
+
+.carousel-control-prev {
+    left: 15px; /* Positions the "Previous" button slightly outside the left edge of the .carousel-item */
+}
+
+.carousel-control-next {
+    right: 15px; /* Positions the "Next" button slightly outside the right edge of the .carousel-item */
+}
+
